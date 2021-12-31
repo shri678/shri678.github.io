@@ -1,0 +1,287 @@
+h1 {
+    color: blue;
+    font-weight: bold;
+    text-shadow:  0px 0px 5px greenyellow, 0px 3px 5px darkred;
+    font-family: Merriweather, Segoe UI Symbol, Arial, Times New Roman;
+    margin-left: 40 px;
+}
+
+h3{
+    color: rgb(149, 179, 232);
+    font-family: Segoe UI Symbol, Arial, Times New Roman;
+}
+
+.sentence {
+    font-family: Segoe UI Symbol, Arial, Times New Roman;
+    margin-top: 20px;
+    color: black;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.box {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	border-width:2px;
+	border-style:solid;
+	border-color:black;
+      }
+
+.headline {
+    font-family: Segoe UI Symbol, Arial, Times New Roman;
+    margin-top: 20px;
+    color: green;
+    font-size: 20px;
+    line-height: 2;
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;	
+}
+
+.subtitle {
+    color: blue;
+    margin-top: 100px;
+    margin-left: 40px; 
+    font-family: Segoe UI Symbol, Arial, Times New Roman;
+
+}
+
+/*
+.def{
+    color: black;
+    font-family: Segoe UI Symbol, Arial, Times New Roman;
+    font-size: 20px;
+    padding:  20px;
+    
+}
+.pic{
+    margin-top: 15px;
+}
+*/
+
+img {
+    float: left;
+    margin-left: 20px;
+    margin-top: 40px;	
+}
+
+.imgmargin {
+	margin-left: 20px;
+    	margin-top: 40px;	
+}
+
+body {
+    background: white;
+    /*margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    overflow: hidden;*/
+    padding-top: 80px;
+    padding-bottom: 25px;
+}
+
+header {
+    background: white;
+    /*margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 20px;*/
+}
+
+html {
+	width: 100%;
+	height: 100%;
+	/*margin-top: 20px;
+	padding: 0; 
+	overflow: hidden;
+    	padding-top: 44px;
+    	padding-bottom: 25px;*/
+}
+ 
+
+#map {
+	position:absolute;
+	top:0;
+	bottom:0;
+	right:0;
+	left:40px;
+}
+
+#map_e247e02e479e456fb477616fc3af43ff {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+}
+
+#map_341bcc23c0a34ae38b33c87e5a95f447 {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+}
+
+#map_0b22795ad795468cab183cf618684fbb {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+}
+
+.graphs {
+	width: 50.0%;
+        height: 100.0%;
+	display: inline-block;
+}
+.folium-map {
+	width: 70.0%;
+	margin:auto;
+}
+
+
+ul {
+  list-style-type: none;
+  /*margin: 0;
+  padding: 0;*/
+  overflow: hidden;
+  /*background-color: #3764A5; */
+  background-color: white;
+  font-family: Segoe UI Symbol, Arial, Times New Roman;
+  font-size: 20px;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: black;
+  text-align: left;
+/*  padding: 14px 16px;*/
+  padding: 5px;
+  text-decoration: none; 
+  background-color: white;
+  font-family: Segoe UI Symbol, Arial, Times New Roman;
+  font-size: 20px;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: antiquewhite;
+}
+
+li .dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: anitiquewhite;
+  min-width: 160px;
+/*  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+/*  padding: 14px 16px;*/
+  padding: 6px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-family: Segoe UI Symbol, Arial, Times New Roman;	
+  font-size: 12px;
+}
+
+.dropdown-content a:hover {background-color: antiquewhite;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.active {
+  background-color: white;
+}
+
+
+
+
+/*Adding link to Final project */
+
+
+
+.starbucks-heat {
+        width: 2vw;
+        height: 65%;
+    }
+
+.starbucks-heat-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    height: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+.starbucks-heat {
+    display: inline-flex;
+    margin: 7.5%;
+    width: 5vw;
+    height: 65%;
+    border-radius: 10em;
+    background: var(--white);
+}
+
+.white {
+    color: var(--white);
+}
+
+
+.exp-content {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.evaporate-1 {
+    animation: 2.0s ease-in-out infinite starbucks-evaporate;
+    animation-delay: 0s;
+}
+.evaporate-2 {
+    animation: 2.0s ease-in-out infinite starbucks-evaporate;
+    animation-delay: 0.5s;
+}
+.evaporate-3 {
+    animation: 2.0s ease-in-out infinite starbucks-evaporate;
+    animation-delay: 1.0s;
+}
+
+.logo {
+    position: relative;
+    margin-bottom: 1.5em;
+    height: 17.5%;
+}
+
+.border {
+  border: 5px solid blue;
+  border-radius: 5px;
+  width: 75%;
+}
