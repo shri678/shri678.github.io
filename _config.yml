@@ -19,7 +19,7 @@ navbar-links:
     - Area Graphs: ""
     - Scatterplots: ""
     - Maps: ""
-  Covid: "tags.html"
+  Covid: "Covid.md"
   Cricket: ""
 # --- Logo --- #
 
