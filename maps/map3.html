@@ -1,0 +1,1638 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_6fea7ac064e44556b2247432806ead00 {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+             <h1 align="center" style="font-size:20px"><b>Electricity Needed vs. Electricity Generated in 2007 </b></h1>
+             
+    
+    <div class="folium-map" id="map_6fea7ac064e44556b2247432806ead00" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_6fea7ac064e44556b2247432806ead00 = L.map(
+        'map_6fea7ac064e44556b2247432806ead00', {
+        center: [0, 0],
+        zoom: 2,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+
+    
+    var tile_layer_da74ef7a8f674d7b8f3e0fa5ca36f4de = L.tileLayer(
+        'https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 4,
+        "maxZoom": 4,
+        "minZoom": 2,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_6fea7ac064e44556b2247432806ead00);
+    
+            var feature_group_3e128e7507b347e4a97650ca06cf5c41 = L.featureGroup(
+                ).addTo(map_6fea7ac064e44556b2247432806ead00);
+        
+    
+            var circle_marker_b121f8e8c2ea46ce8abdb8e0bc98e53d = L.circleMarker(
+                [28.0000272, 2.9999825],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 7.023359772221308,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(feature_group_3e128e7507b347e4a97650ca06cf5c41);
+            
+    
+        circle_marker_b121f8e8c2ea46ce8abdb8e0bc98e53d.bindTooltip(
+            `<div>`
+            + `Country:Algeria<br>Electricity Total: 37,300,000,000.0kilowatt-hours<br>Electricity per Person: _1,090.0kilowatt-hours` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_f434ade5c178475ebdf7d02dd5f83515 = L.circleMarker(
+                [-34.9964963, -64.9672817],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 7.951517240205871,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(feature_group_3e128e7507b347e4a97650ca06cf5c41);
+            
+    
+        circle_marker_f434ade5c178475ebdf7d02dd5f83515.bindTooltip(
+            `<div>`
+            + `Country:Argentina<br>Electricity Total: 115,000,000,000.0kilowatt-hours<br>Electricity per Person: _2,880.0kilowatt-hours` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_f017f134c9224035880fdb764a0cc191 = L.circleMarker(
+                [-24.7761086, 134.755],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 7.393543630992658,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(feature_group_3e128e7507b347e4a97650ca06cf5c41);
+            
+    
+        circle_marker_f017f134c9224035880fdb764a0cc191.bindTooltip(
+            `<div>`
+            + `Country:Australia<br>Electricity Total: 243,000,000,000.0kilowatt-hours<br>Electricity per Person: 11,600.0kilowatt-hours` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_6f563218c8a841e696116bab464c1809 = L.circleMarker(
+                [47.59397, 14.12456],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 8.314600215914837,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(feature_group_3e128e7507b347e4a97650ca06cf5c41);
+            
+    
+        circle_marker_6f563218c8a841e696116bab464c1809.bindTooltip(
+            `<div>`
+            + `Country:Austria<br>Electricity Total: 64,900,000,000.0kilowatt-hours<br>Electricity per Person: _7,800.0kilowatt-hours` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_1ff1eee9baa749349e21dd9b0f727cd9 = L.circleMarker(
+                [40.3936294, 47.7872508],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 7.74027472649402,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(feature_group_3e128e7507b347e4a97650ca06cf5c41);
+            
+    
+        circle_marker_1ff1eee9baa749349e21dd9b0f727cd9.bindTooltip(
+            `<div>`
+            + `Country:Azerbaijan<br>Electricity Total: 21,800,000,000.0kilowatt-hours<br>Electricity per Person: _2,500.0kilowatt-hours` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_f78f0631dfb44604a666ffab0ebc7a95 = L.circleMarker(
+                [23.5031022, 90.00386523825051],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 8.028901787291217,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(feature_group_3e128e7507b347e4a97650ca06cf5c41);
+            
+    
+        circle_marker_f78f0631dfb44604a666ffab0ebc7a95.bindTooltip(
+            `<div>`
+            + `Country:Bangladesh<br>Electricity Total: 31,000,000,000.0kilowatt-hours<br>Electricity per Person: ___211.0kilowatt-hours` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_99f0ab2c428045c8b4905cfb50bc99c7 = L.circleMarker(
+                [53.4250605, 27.6971358],
+                {
+  "bubblingMouseEvents": true,
+  "color": "purple",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9.06823069662794,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(feature_group_3e128e7507b347e4a97650ca06cf5c41);
+            
+    
+        circle_marker_99f0ab2c428045c8b4905cfb50bc99c7.bindTooltip(
+            `<div>`
+            + `Country:Belarus<br>Electricity Total: 31,800,000,000.0kilowatt-hours<br>Electricity per Person: _3,340.0kilowatt-hours` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_7f2404180b2f431eb5fa2deb9d21649e = L.circleMarker(
+                [50.6402809, 4.6667145],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 8.308226659667241,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(feature_group_3e128e7507b347e4a97650ca06cf5c41);
+            
+    
+        circle_marker_7f2404180b2f431eb5fa2deb9d21649e.bindTooltip(
+            `<div>`
+            + `Country:Belgium<br>Electricity Total: 88,800,000,000.0kilowatt-hours<br>Electricity per Person: _8,300.0kilowatt-hours` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_151233d124bc47c193ca7d1f9657784c = L.circleMarker(
+                [-10.3333333, -53.2],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 8.086605661251504,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(feature_group_3e128e7507b347e4a97650ca06cf5c41);
+            
+    
+        circle_marker_151233d124bc47c193ca7d1f9657784c.bindTooltip(
+            `<div>`
+            + `Country:Brazil<br>Electricity Total: 445,000,000,000.0kilowatt-hours<br>Electricity per Person: _2,330.0kilowatt-hours` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_d0915fb7995249ec96d13dba5c44aa95 = L.circleMarker(
+                [42.6073975, 25.4856617],
+                {
+  "bubblingMouseEvents": true,
+  "color": "purple",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9.804980917222577,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(feature_group_3e128e7507b347e4a97650ca06cf5c41);
+            
+    
+        circle_marker_d0915fb7995249ec96d13dba5c44aa95.bindTooltip(
+            `<div>`
+            + `Country:Bulgaria<br>Electricity Total: 43,300,000,000.0kilowatt-hours<br>Electricity per Person: _5,720.0kilowatt-hours` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_96531c60d32b484090ecb70e46a27961 = L.circleMarker(
+                [61.0666922, -107.991707],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 7.898203541870648,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(feature_group_3e128e7507b347e4a97650ca06cf5c41);
+            
+    
+        circle_marker_96531c60d32b484090ecb70e46a27961.bindTooltip(
+            `<div>`
+            + `Country:Canada<br>Electricity Total: 626,000,000,000.0kilowatt-hours<br>Electricity per Person: 18,900.0kilowatt-hours` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_ac66187ecdcb4a4f867cb4a03d5cdf35 = L.circleMarker(
+                [-31.7613365, -71.3187697],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 7.752153202652148,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(feature_group_3e128e7507b347e4a97650ca06cf5c41);
+            
+    
+        circle_marker_ac66187ecdcb4a4f867cb4a03d5cdf35.bindTooltip(
+            `<div>`
+            + `Country:Chile<br>Electricity Total: 60,100,000,000.0kilowatt-hours<br>Electricity per Person: _3,650.0kilowatt-hours` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_6c8e3a74b09a4a4d8f1cccc0411589d2 = L.circleMarker(
+                [35.000074, 104.999927],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 8.371278102599266,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(feature_group_3e128e7507b347e4a97650ca06cf5c41);
+            
+    
+        circle_marker_6c8e3a74b09a4a4d8f1cccc0411589d2.bindTooltip(
+            `<div>`
+            + `Country:China<br>Electricity Total: 3,280,000,000,000.0kilowatt-hours<br>Electricity per Person: _2,450.0kilowatt-hours` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_751fc8cfb6db4061994b9b2a46ab2aea = L.circleMarker(
+                [4.099917, -72.9088133],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 7.831282929433898,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(feature_group_3e128e7507b347e4a97650ca06cf5c41);
+            
+    
+        circle_marker_751fc8cfb6db4061994b9b2a46ab2aea.bindTooltip(
+            `<div>`
+            + `Country:Colombia<br>Electricity Total: 61,100,000,000.0kilowatt-hours<br>Electricity per Person: _1,380.0kilowatt-hours` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_21b0f325b7d64a4db9393978881cd0aa = L.circleMarker(
+                [55.670249, 10.3333283],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 8.493024857933346,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(feature_group_3e128e7507b347e4a97650ca06cf5c41);
+            
+    
+        circle_marker_21b0f325b7d64a4db9393978881cd0aa.bindTooltip(
+            `<div>`
+            + `Country:Denmark<br>Electricity Total: 39,300,000,000.0kilowatt-hours<br>Electricity per Person: _7,190.0kilowatt-hours` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_04f57162b8ce47edb5c1da05271cadb1 = L.circleMarker(
+                [-1.3397668, -79.3666965],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 7.233606348313282,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(feature_group_3e128e7507b347e4a97650ca06cf5c41);
+            
+    
+        circle_marker_04f57162b8ce47edb5c1da05271cadb1.bindTooltip(
+            `<div>`
+            + `Country:Ecuador<br>Electricity Total: 17,300,000,000.0kilowatt-hours<br>Electricity per Person: _1,220.0kilowatt-hours` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_bef65d7481444069b3fbccc1cf8b0af5 = L.circleMarker(
+                [26.2540493, 29.2675469],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6.977125766786367,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(feature_group_3e128e7507b347e4a97650ca06cf5c41);
+            
+    
+        circle_marker_bef65d7481444069b3fbccc1cf8b0af5.bindTooltip(
+            `<div>`
+            + `Country:Egypt<br>Electricity Total: 119,000,000,000.0kilowatt-hours<br>Electricity per Person: _1,500.0kilowatt-hours` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_946c3ddef5b24ff88bf445dc840ca5e9 = L.circleMarker(
+                [63.2467777, 25.9209164],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 8.620670801573539,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(feature_group_3e128e7507b347e4a97650ca06cf5c41);
+            
+    
+        circle_marker_946c3ddef5b24ff88bf445dc840ca5e9.bindTooltip(
+            `<div>`
+            + `Country:Finland<br>Electricity Total: 81,200,000,000.0kilowatt-hours<br>Electricity per Person: 15,300.0kilowatt-hours` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_690592f5420143f184c25e1f1c5ecd8a = L.circleMarker(
+                [46.603354, 1.8883335],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 8.542648902546777,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(feature_group_3e128e7507b347e4a97650ca06cf5c41);
+            
+    
+        circle_marker_690592f5420143f184c25e1f1c5ecd8a.bindTooltip(
+            `<div>`
+            + `Country:France<br>Electricity Total: 570,000,000,000.0kilowatt-hours<br>Electricity per Person: _9,200.0kilowatt-hours` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_77842a0d92bf44eea3c6daaf5b08ab9a = L.circleMarker(
+                [51.0834196, 10.4234469],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 8.74913265056789,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(feature_group_3e128e7507b347e4a97650ca06cf5c41);
+            
+    
+        circle_marker_77842a0d92bf44eea3c6daaf5b08ab9a.bindTooltip(
+            `<div>`
+            + `Country:Germany<br>Electricity Total: 641,000,000,000.0kilowatt-hours<br>Electricity per Person: _7,870.0kilowatt-hours` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_f272fd6e04164c3b945df701c8febff7 = L.circleMarker(
+                [38.9953683, 21.9877132],
+                {
+  "bubblingMouseEvents": true,
+  "color": "purple",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9.826230890317548,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(feature_group_3e128e7507b347e4a97650ca06cf5c41);
+            
+    
+        circle_marker_f272fd6e04164c3b945df701c8febff7.bindTooltip(
+            `<div>`
+            + `Country:Greece<br>Electricity Total: 63,500,000,000.0kilowatt-hours<br>Electricity per Person: _5,580.0kilowatt-hours` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_267a0794fff64df3917a0102105d189d = L.circleMarker(
+                [47.1817585, 19.5060937],
+                {
+  "bubblingMouseEvents": true,
+  "color": "purple",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9.339782089652491,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(feature_group_3e128e7507b347e4a97650ca06cf5c41);
+            
+    
+        circle_marker_267a0794fff64df3917a0102105d189d.bindTooltip(
+            `<div>`
+            + `Country:Hungary<br>Electricity Total: 40,000,000,000.0kilowatt-hours<br>Electricity per Person: _3,990.0kilowatt-hours` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_4313893200a74c1996b5f65ad48f999c = L.circleMarker(
+                [22.3511148, 78.6677428],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 7.692531355954611,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(feature_group_3e128e7507b347e4a97650ca06cf5c41);
+            
+    
+        circle_marker_4313893200a74c1996b5f65ad48f999c.bindTooltip(
+            `<div>`
+            + `Country:India<br>Electricity Total: 795,000,000,000.0kilowatt-hours<br>Electricity per Person: ___674.0kilowatt-hours` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_17af570bc0c1444196ca6b1bdca762cf = L.circleMarker(
+                [-2.4833826, 117.8902853],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 7.647065435066175,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(feature_group_3e128e7507b347e4a97650ca06cf5c41);
+            
+    
+        circle_marker_17af570bc0c1444196ca6b1bdca762cf.bindTooltip(
+            `<div>`
+            + `Country:Indonesia<br>Electricity Total: 142,000,000,000.0kilowatt-hours<br>Electricity per Person: ___611.0kilowatt-hours` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_c0a9b133df1a483c95e9e8ed7fc06df3 = L.circleMarker(
+                [32.6475314, 54.5643516],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 7.721235991842147,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(feature_group_3e128e7507b347e4a97650ca06cf5c41);
+            
+    
+        circle_marker_c0a9b133df1a483c95e9e8ed7fc06df3.bindTooltip(
+            `<div>`
+            + `Country:Iran<br>Electricity Total: 196,000,000,000.0kilowatt-hours<br>Electricity per Person: _2,720.0kilowatt-hours` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_120426b92e884e29a021db966d78ea13 = L.circleMarker(
+                [52.865196, -7.9794599],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 8.01084043675303,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(feature_group_3e128e7507b347e4a97650ca06cf5c41);
+            
+    
+        circle_marker_120426b92e884e29a021db966d78ea13.bindTooltip(
+            `<div>`
+            + `Country:Ireland<br>Electricity Total: 28,700,000,000.0kilowatt-hours<br>Electricity per Person: _6,530.0kilowatt-hours` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_4ae5e5f9bf3e4fd89c65eb2d6717764e = L.circleMarker(
+                [31.5313113, 34.8667654],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 7.197585335783676,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(feature_group_3e128e7507b347e4a97650ca06cf5c41);
+            
+    
+        circle_marker_4ae5e5f9bf3e4fd89c65eb2d6717764e.bindTooltip(
+            `<div>`
+            + `Country:Israel<br>Electricity Total: 55,100,000,000.0kilowatt-hours<br>Electricity per Person: _7,960.0kilowatt-hours` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_d7741163d1d24fe8854bd3a4bde61499 = L.circleMarker(
+                [42.6384261, 12.674297],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 8.835583021822952,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(feature_group_3e128e7507b347e4a97650ca06cf5c41);
+            
+    
+        circle_marker_d7741163d1d24fe8854bd3a4bde61499.bindTooltip(
+            `<div>`
+            + `Country:Italy<br>Electricity Total: 314,000,000,000.0kilowatt-hours<br>Electricity per Person: _5,290.0kilowatt-hours` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_f480619930ac45f599166b4614a79e64 = L.circleMarker(
+                [36.5748441, 139.2394179],
+                {
+  "bubblingMouseEvents": true,
+  "color": "purple",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9.146862296681642,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(feature_group_3e128e7507b347e4a97650ca06cf5c41);
+            
+    
+        circle_marker_f480619930ac45f599166b4614a79e64.bindTooltip(
+            `<div>`
+            + `Country:Japan<br>Electricity Total: 1,180,000,000,000.0kilowatt-hours<br>Electricity per Person: _9,180.0kilowatt-hours` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_89aaf1baa2e944058ae89e02fa50c20b = L.circleMarker(
+                [47.2286086, 65.2093197],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 7.585889076765463,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(feature_group_3e128e7507b347e4a97650ca06cf5c41);
+            
+    
+        circle_marker_89aaf1baa2e944058ae89e02fa50c20b.bindTooltip(
+            `<div>`
+            + `Country:Kazakhstan<br>Electricity Total: 76,600,000,000.0kilowatt-hours<br>Electricity per Person: _4,840.0kilowatt-hours` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_1f72ec3398e846fc8c3980e1870050a1 = L.circleMarker(
+                [29.2733964, 47.4979476],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5.27402989326628,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(feature_group_3e128e7507b347e4a97650ca06cf5c41);
+            
+    
+        circle_marker_1f72ec3398e846fc8c3980e1870050a1.bindTooltip(
+            `<div>`
+            + `Country:Kuwait<br>Electricity Total: 48,800,000,000.0kilowatt-hours<br>Electricity per Person: 19,500.0kilowatt-hours` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_6c47795978b14007bbf1af06b926cc72 = L.circleMarker(
+                [55.3500003, 23.7499997],
+                {
+  "bubblingMouseEvents": true,
+  "color": "purple",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10.763847649422985,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(feature_group_3e128e7507b347e4a97650ca06cf5c41);
+            
+    
+        circle_marker_6c47795978b14007bbf1af06b926cc72.bindTooltip(
+            `<div>`
+            + `Country:Lithuania<br>Electricity Total: 14,000,000,000.0kilowatt-hours<br>Electricity per Person: _4,300.0kilowatt-hours` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_44018338edc2492590a28e184ac3e0ac = L.circleMarker(
+                [4.5693754, 102.2656823],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 7.43425141968361,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(feature_group_3e128e7507b347e4a97650ca06cf5c41);
+            
+    
+        circle_marker_44018338edc2492590a28e184ac3e0ac.bindTooltip(
+            `<div>`
+            + `Country:Malaysia<br>Electricity Total: 104,000,000,000.0kilowatt-hours<br>Electricity per Person: _3,890.0kilowatt-hours` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_2f93de4f64224d6ba547d9f49cc640f2 = L.circleMarker(
+                [23.553556999999998, -102.26751579375113],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 7.812088232950331,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(feature_group_3e128e7507b347e4a97650ca06cf5c41);
+            
+    
+        circle_marker_2f93de4f64224d6ba547d9f49cc640f2.bindTooltip(
+            `<div>`
+            + `Country:Mexico<br>Electricity Total: 263,000,000,000.0kilowatt-hours<br>Electricity per Person: _2,350.0kilowatt-hours` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_cceac9740f4b41d49e917c61d88d508f = L.circleMarker(
+                [52.15517, 5.38721],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 8.657878488603233,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(feature_group_3e128e7507b347e4a97650ca06cf5c41);
+            
+    
+        circle_marker_cceac9740f4b41d49e917c61d88d508f.bindTooltip(
+            `<div>`
+            + `Country:Netherlands<br>Electricity Total: 105,000,000,000.0kilowatt-hours<br>Electricity per Person: _6,370.0kilowatt-hours` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_758e5a04cdc040268d501a61707c164a = L.circleMarker(
+                [60.5000209, 9.0999715],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 7.815761410506773,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(feature_group_3e128e7507b347e4a97650ca06cf5c41);
+            
+    
+        circle_marker_758e5a04cdc040268d501a61707c164a.bindTooltip(
+            `<div>`
+            + `Country:Norway<br>Electricity Total: 137,000,000,000.0kilowatt-hours<br>Electricity per Person: 29,100.0kilowatt-hours` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_50d6cfab59ac45b096ca05eb3d085f1e = L.circleMarker(
+                [30.3308401, 71.247499],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6.5309965823282905,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(feature_group_3e128e7507b347e4a97650ca06cf5c41);
+            
+    
+        circle_marker_50d6cfab59ac45b096ca05eb3d085f1e.bindTooltip(
+            `<div>`
+            + `Country:Pakistan<br>Electricity Total: 98,100,000,000.0kilowatt-hours<br>Electricity per Person: ___612.0kilowatt-hours` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_f07c49f28092464bb5155eac1b6623ea = L.circleMarker(
+                [-6.8699697, -75.0458515],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 7.699536280992635,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(feature_group_3e128e7507b347e4a97650ca06cf5c41);
+            
+    
+        circle_marker_f07c49f28092464bb5155eac1b6623ea.bindTooltip(
+            `<div>`
+            + `Country:Peru<br>Electricity Total: 29,900,000,000.0kilowatt-hours<br>Electricity per Person: _1,060.0kilowatt-hours` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_2da6716ba21d43d28a422ad250e72e5c = L.circleMarker(
+                [12.7503486, 122.7312101],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 7.327852356782632,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(feature_group_3e128e7507b347e4a97650ca06cf5c41);
+            
+    
+        circle_marker_2da6716ba21d43d28a422ad250e72e5c.bindTooltip(
+            `<div>`
+            + `Country:Philippines<br>Electricity Total: 59,600,000,000.0kilowatt-hours<br>Electricity per Person: ___668.0kilowatt-hours` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_51fe17bf8dc34b4c96160b379c30efc1 = L.circleMarker(
+                [52.215933, 19.134422],
+                {
+  "bubblingMouseEvents": true,
+  "color": "purple",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9.089068480921464,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(feature_group_3e128e7507b347e4a97650ca06cf5c41);
+            
+    
+        circle_marker_51fe17bf8dc34b4c96160b379c30efc1.bindTooltip(
+            `<div>`
+            + `Country:Poland<br>Electricity Total: 159,000,000,000.0kilowatt-hours<br>Electricity per Person: _4,160.0kilowatt-hours` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_56e6990829cc43bcb6d5aab4d03fa0c6 = L.circleMarker(
+                [40.0332629, -7.8896263],
+                {
+  "bubblingMouseEvents": true,
+  "color": "purple",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9.3817466117556,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(feature_group_3e128e7507b347e4a97650ca06cf5c41);
+            
+    
+        circle_marker_56e6990829cc43bcb6d5aab4d03fa0c6.bindTooltip(
+            `<div>`
+            + `Country:Portugal<br>Electricity Total: 47,300,000,000.0kilowatt-hours<br>Electricity per Person: _4,450.0kilowatt-hours` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_7b70ca98b87c4cf8815d2720fc155cb8 = L.circleMarker(
+                [25.3336984, 51.2295295],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 3.714334138197442,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(feature_group_3e128e7507b347e4a97650ca06cf5c41);
+            
+    
+        circle_marker_7b70ca98b87c4cf8815d2720fc155cb8.bindTooltip(
+            `<div>`
+            + `Country:Qatar<br>Electricity Total: 19,500,000,000.0kilowatt-hours<br>Electricity per Person: 16,400.0kilowatt-hours` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_38dcd340c6414017872d27a5cae3a08a = L.circleMarker(
+                [45.9852129, 24.6859225],
+                {
+  "bubblingMouseEvents": true,
+  "color": "purple",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9.851612283659815,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(feature_group_3e128e7507b347e4a97650ca06cf5c41);
+            
+    
+        circle_marker_38dcd340c6414017872d27a5cae3a08a.bindTooltip(
+            `<div>`
+            + `Country:Romania<br>Electricity Total: 61,700,000,000.0kilowatt-hours<br>Electricity per Person: _2,930.0kilowatt-hours` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_6e30e34efa144d53acec5678dc3cd8db = L.circleMarker(
+                [64.6863136, 97.7453061],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 8.834964974664853,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(feature_group_3e128e7507b347e4a97650ca06cf5c41);
+            
+    
+        circle_marker_6e30e34efa144d53acec5678dc3cd8db.bindTooltip(
+            `<div>`
+            + `Country:Russia<br>Electricity Total: 1,020,000,000,000.0kilowatt-hours<br>Electricity per Person: _7,120.0kilowatt-hours` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_c005a72195e04f0eb9762d0389fd2839 = L.circleMarker(
+                [1.357107, 103.8194992],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 7.275841435144227,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(feature_group_3e128e7507b347e4a97650ca06cf5c41);
+            
+    
+        circle_marker_c005a72195e04f0eb9762d0389fd2839.bindTooltip(
+            `<div>`
+            + `Country:Singapore<br>Electricity Total: 41,100,000,000.0kilowatt-hours<br>Electricity per Person: _8,690.0kilowatt-hours` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_0da4cc09e8ca4ed8aa498a48b835f00e = L.circleMarker(
+                [39.3260685, -4.8379791],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 8.729364328002996,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(feature_group_3e128e7507b347e4a97650ca06cf5c41);
+            
+    
+        circle_marker_0da4cc09e8ca4ed8aa498a48b835f00e.bindTooltip(
+            `<div>`
+            + `Country:Spain<br>Electricity Total: 312,000,000,000.0kilowatt-hours<br>Electricity per Person: _6,880.0kilowatt-hours` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_db374cece7884cb8bc24e6154a6fcee0 = L.circleMarker(
+                [59.6749712, 14.5208584],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 8.196411995894533,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(feature_group_3e128e7507b347e4a97650ca06cf5c41);
+            
+    
+        circle_marker_db374cece7884cb8bc24e6154a6fcee0.bindTooltip(
+            `<div>`
+            + `Country:Sweden<br>Electricity Total: 149,000,000,000.0kilowatt-hours<br>Electricity per Person: 16,200.0kilowatt-hours` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_ddd90704d8e449468f1940ccdefb39dc = L.circleMarker(
+                [46.7985624, 8.2319736],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 7.86866851555525,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(feature_group_3e128e7507b347e4a97650ca06cf5c41);
+            
+    
+        circle_marker_ddd90704d8e449468f1940ccdefb39dc.bindTooltip(
+            `<div>`
+            + `Country:Switzerland<br>Electricity Total: 70,900,000,000.0kilowatt-hours<br>Electricity per Person: _9,370.0kilowatt-hours` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_0055bb5b9ce345628177d2e811d4aa5f = L.circleMarker(
+                [14.8971921, 100.83273],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 8.576000570699186,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(feature_group_3e128e7507b347e4a97650ca06cf5c41);
+            
+    
+        circle_marker_0055bb5b9ce345628177d2e811d4aa5f.bindTooltip(
+            `<div>`
+            + `Country:Thailand<br>Electricity Total: 143,000,000,000.0kilowatt-hours<br>Electricity per Person: _2,150.0kilowatt-hours` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_e3e6a483c5d6450298d6ed22a555b7d7 = L.circleMarker(
+                [38.9597594, 34.9249653],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 7.45044566788528,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(feature_group_3e128e7507b347e4a97650ca06cf5c41);
+            
+    
+        circle_marker_e3e6a483c5d6450298d6ed22a555b7d7.bindTooltip(
+            `<div>`
+            + `Country:Turkey<br>Electricity Total: 192,000,000,000.0kilowatt-hours<br>Electricity per Person: _2,750.0kilowatt-hours` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_c5b99245e08148b192d80dbb4f290a25 = L.circleMarker(
+                [49.4871968, 31.2718321],
+                {
+  "bubblingMouseEvents": true,
+  "color": "purple",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9.531872347767075,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(feature_group_3e128e7507b347e4a97650ca06cf5c41);
+            
+    
+        circle_marker_c5b99245e08148b192d80dbb4f290a25.bindTooltip(
+            `<div>`
+            + `Country:Ukraine<br>Electricity Total: 195,000,000,000.0kilowatt-hours<br>Electricity per Person: _4,210.0kilowatt-hours` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_e952c795fd1c4937ab8336816fab0bf8 = L.circleMarker(
+                [41.32373, 63.9528098],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 7.3610580009339,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(feature_group_3e128e7507b347e4a97650ca06cf5c41);
+            
+    
+        circle_marker_e952c795fd1c4937ab8336816fab0bf8.bindTooltip(
+            `<div>`
+            + `Country:Uzbekistan<br>Electricity Total: 49,000,000,000.0kilowatt-hours<br>Electricity per Person: _1,790.0kilowatt-hours` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_a9efe97562ca412d8fce938dad6fcc15 = L.circleMarker(
+                [8.0018709, -66.1109318],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 8.778855566574682,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(feature_group_3e128e7507b347e4a97650ca06cf5c41);
+            
+    
+        circle_marker_a9efe97562ca412d8fce938dad6fcc15.bindTooltip(
+            `<div>`
+            + `Country:Venezuela<br>Electricity Total: 114,000,000,000.0kilowatt-hours<br>Electricity per Person: _4,110.0kilowatt-hours` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_a43e4e07d5634864b993608f13eb7020 = L.circleMarker(
+                [13.2904027, 108.4265113],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 7.934049714145788,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(feature_group_3e128e7507b347e4a97650ca06cf5c41);
+            
+    
+        circle_marker_a43e4e07d5634864b993608f13eb7020.bindTooltip(
+            `<div>`
+            + `Country:Vietnam<br>Electricity Total: 64,100,000,000.0kilowatt-hours<br>Electricity per Person: ___747.0kilowatt-hours` + `</div>`,
+            {"sticky": true}
+        );
+        
+</script>
