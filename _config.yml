@@ -19,8 +19,8 @@ navbar-links:
     - Area Graphs: ""
     - Scatterplots: ""
     - Maps: ""
-  Covid: "Covid"
-  Cricket: ""
+  Covid: "https://shri678.github.io/Covid"
+  Cricket: "https://shri678.github.io/Cricket"
 # --- Logo --- #
 
 # Image to show in the navigation bar - works best with a square image
