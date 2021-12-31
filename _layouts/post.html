@@ -77,11 +77,8 @@ layout: base
         {% endif %}
       </ul>
       {% include comments.html %}
-    </div>
-  </div>
-</div>
-
-{% if page.htmlwidgets %}
+      <!-- Added following -->
+          {% if page.htmlwidgets %}
 {% for html_dep in site.static_files %}
   {% if html_dep.path contains 'htmlwidgets_deps/' %}
     {% assign start = "<script src=" | append: {{site.baseurl}} %}
@@ -89,3 +86,12 @@ layout: base
     {% endif %}
   {% endfor %}
 {% endif %}
+
+      <!-- Added following-->
+      
+      
+    </div>
+  </div>
+</div>
+
+
