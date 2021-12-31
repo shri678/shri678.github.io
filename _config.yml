@@ -15,10 +15,10 @@ author: Shrinaath Narasimhan
 
 navbar-links:
   Data Visualization:
-    - Line Graphs: ""
-    - Area Graphs: ""
-    - Scatterplots: ""
-    - Maps: ""
+    - Line Graphs: "https://shri678.github.io/LineGraphs"
+    - Area Graphs: "https://shri678.github.io/AreaGraphs"
+    - Scatterplots: "https://shri678.github.io/Scatterplots"
+    - Maps: "https://shri678.github.io/Maps"
   Covid: "https://shri678.github.io/Covid"
   Cricket: "https://shri678.github.io/Cricket"
 # --- Logo --- #
