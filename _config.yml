@@ -16,11 +16,11 @@ author: Shrinaath Narasimhan
 navbar-links:
   About Me: "aboutme"
   Data Visualization:
-    - Line Graphs: "https://beautifuljekyll.com"
-    - Area Graphs: "https://www.markdowntutorial.com/"
+    - Line Graphs: ""
+    - Area Graphs: ""
     - Scatterplots:
     - Maps:
-  Covid: "https://deanattali.com"
+  Covid: ""
   Cricket: ""
 # --- Logo --- #
 
